@@ -1,11 +1,27 @@
 import org.example.Main;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 
 public class TestMain {
 
-    @Test
-    public void testInputIsEven(){
-        assertTrue(Main.checkIfInputIsAnEvenNumber(22)); // Assertion
-    }
+@Test
+public void testInputIsEven(){
+assertEquals(Main.checkIfInputIsAnEvenNumber(21)); // Assertion
+}
+@Test
+"asdasd"
+void skippedTest() {
+}
+@Test
+void failingTest(){
+fail("failing")
+}
 }
