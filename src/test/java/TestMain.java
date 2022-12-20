@@ -17,10 +17,6 @@ public void testInputIsEven(){
 assertEquals(Main.checkIfInputIsAnEvenNumber(21)); // Assertion
 }
 @Test
-"asdasd"
-void skippedTest() {
-}
-@Test
 void failingTest(){
 fail("failing")
 }
