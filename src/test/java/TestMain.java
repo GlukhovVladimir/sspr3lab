@@ -18,6 +18,6 @@ assertEquals(Main.checkIfInputIsAnEvenNumber(21)); // Assertion
 }
 @Test
 public void failingTest(){
-fail("failing")
+fail("failing");
 }
 }
